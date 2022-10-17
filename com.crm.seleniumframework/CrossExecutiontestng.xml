@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  <test thread-count="5" name="Test01" parallel="tests">
+  <parameter name="BROWSER" value="chrome"></parameter>
+    <classes>
+      <class name="com.crm.createorganization.CreateOrganizationTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test02" parallel="tests">
+  <parameter name="BROWSER" value="firefox"></parameter>
+    <classes>
+      <class name="com.crm.createorganization.CreateOrganizationTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
