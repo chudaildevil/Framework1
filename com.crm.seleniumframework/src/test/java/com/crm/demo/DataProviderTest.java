@@ -26,6 +26,7 @@ public class DataProviderTest {
 		driver.findElement(By.linkText("More")).click();
 		driver.findElement(By.name("Sales Order")).click();
 		driver.findElement(By.xpath("//img[@alt='Create Sales Order...']")).click();
+		System.out.println("github pulled succefully");
 		
 		
 		
